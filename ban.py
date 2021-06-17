@@ -32,7 +32,7 @@ def massban(path, server, auth, reason=None):
     x = open(path)
     x = x.read()
     items = json.loads(x)
-    for user in x:
+    for user in items["scraped"]:
         t = Thread(target=ban, args=(user, server, auth, reason,))
         t.start()
     _inital(server)
