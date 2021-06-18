@@ -20,7 +20,7 @@ def ban(x, y, z, i=None):
         payload['reason'] = i
     bs = "\ "
     response = route("PUT", f"/guilds/{y}/bans/{x}", {"Authorization": z}, payload)
-    if 'retry_after' in response.text:
+    if response.status_code == 429:
         print(f"[{random.choice([f'{bs}'.replace(' ', ''), '/', '-', '|'])}] ratelimited for {response.json()['retry_after']}")
         time.sleep(response.json()['retry_after'])
         ban(x, y, z, i)
