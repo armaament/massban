@@ -52,7 +52,7 @@ def validateToken(token):
 
 client = discord.Client(intents=discord.Intents.all())
 
-ctypes.windll.kernel32.SetConsoleTitleW("massban | by anti (https://github.com/bwckslwsh)")    
+ctypes.windll.kernel32.SetConsoleTitleW("massban | by anti (https://github.com/armaament)")    
 token = input("[?] token: ")
 
 def _inital(server):
