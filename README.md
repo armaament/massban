@@ -5,7 +5,7 @@ not really the type of person to make **discord related tools** but still 🤔
 
 # info
 - supports user & bot tokens
-- made this is in under 10 minutes
+- made this in under 10 minutes
 
 |  Usage  |
 | ------- |
